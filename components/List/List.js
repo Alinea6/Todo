@@ -26,7 +26,7 @@ class List extends Component {
       data={this.props.tasks}
       renderItem={({ item, index }) => (
         <ListItem style={styles.item} onPress={() =>this.onPressItem(item)}>
-          <CheckBox style={styles.checkbox} checked={false}/>
+          <CheckBox style={styles.checkbox} checked={false} onPress={() => this.onPressItem(item)}/>
           <Body><Text style={styles.text}>{item}</Text></Body>
         </ListItem>
       )}
@@ -38,12 +38,14 @@ class List extends Component {
 const styles = StyleSheet.create({
   text: {
     fontSize: 15,
-    paddingHorizontal: 12 
+    paddingHorizontal: 12 ,
+    color: "#F4F4F4"
   },
   title: {
     fontSize: 20,
     padding: 5,
-    marginHorizontal: 10
+    marginHorizontal: 10,
+    color: "#F4F4F4"
   },
   item: {
     borderWidth: 1,

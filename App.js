@@ -109,9 +109,9 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
     display: "flex",
-    marginHorizontal: 15,
     flexDirection: 'column',
-    flex: 1
+    flex: 1,
+    backgroundColor: "#111111"
   },
   listContainer: {
     display: "flex",
@@ -120,17 +120,20 @@ const styles = StyleSheet.create({
   },
   add: {
     flex: 2,
-    padding: 10
+    padding: 10,
+    marginHorizontal: 15,
   },
   list1: {
     flex: 9,
     padding: 10,
-    marginVertical: 10
+    marginVertical: 10,
+    marginHorizontal: 15,
   },
   list2: {
     flex: 9,
     padding: 10,
-    marginVertical: 10
+    marginVertical: 10,
+    marginHorizontal: 15,
   }
 })
 

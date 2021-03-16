@@ -1,4 +1,4 @@
-package com.todo;
+package dev.alinea6.todo;
 
 import com.facebook.react.ReactActivity;
 

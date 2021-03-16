@@ -31,10 +31,11 @@ class AddToList extends Component{
     return (
       <View style={styles.container}>  
       <TextInput 
-      style={{ height: 25, width: 315, fontSize: 20, padding: 0, marginVertical: 20,
+      style={{ height: 25, width: 315, color: "#F4F4F4", fontSize: 20, padding: 0, marginVertical: 20,
       borderBottomWidth: 1, borderBottomColor: "#333333", marginLeft: 'auto',
     marginRight: 'auto' }}
       placeholder="New task description"
+      placeholderTextColor="#F4F4F4"
       onChangeText={value => this.setState({ newTask: value })}
       value={this.state.newTask}
       clearButtonMode='always' />
@@ -57,7 +58,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
     padding: 10,
     marginTop: 3,
-    backgroundColor: "#2196F3"
+    backgroundColor: "#2196F3",
+    color: "#F4F4F4"
   }
 })
 

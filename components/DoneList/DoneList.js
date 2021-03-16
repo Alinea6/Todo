@@ -34,12 +34,14 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 15,
     paddingHorizontal: 12,
-    textDecorationLine: "line-through" 
+    textDecorationLine: "line-through",
+    color: "#F4F4F4" 
   },
   title: {
     fontSize: 20,
     padding: 5,
-    marginHorizontal: 10
+    marginHorizontal: 10,
+    color: "#F4F4F4"
   },
   item: {
     borderWidth: 1,
